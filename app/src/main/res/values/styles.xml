@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="RoundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Adjust as needed -->
+    </style>
+
+    <style name="CustomFabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">#FBFBFF</item> <!-- Fill color -->
+        <item name="strokeColor">#1BBCB6</item>    <!-- Border color -->
+        <item name="strokeWidth">10dp</item>        <!-- Border width -->
+        <item name="shapeAppearance">@style/CustomFabShape</item>
+    </style>
+
+    <style name="CustomFabShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">0dp</item> <!-- Adjust for your radius -->
+    </style>
+
+    <style name="CustomAlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:background">@drawable/dialog_background</item> <!-- Rounded background -->
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_animation</item>
+    </style>
+
+    <style name="CalendarDateText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#4F576B</item>
+        <item name="android:fontFamily">@font/alexandriamedium</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="CalendarWeekText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">#4F576B</item>
+        <item name="android:fontFamily">@font/alexandriasemibold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+
+
+</resources>

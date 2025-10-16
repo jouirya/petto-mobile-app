@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1BBCB6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My posts"
+            android:textColor="#4F576B"
+            android:fontFamily="@font/alexandriasemibold"
+            android:textSize="24sp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- Content -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- RecyclerView for posts -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMyPosts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp" />
+
+        <!-- Loading Spinner -->
+        <ProgressBar
+            android:id="@+id/progressBarMyPosts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <!-- Empty state message -->
+        <TextView
+            android:id="@+id/emptyStateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready to create your first post ?"
+            android:textSize="22dp"
+            android:textColor="#FBFBFF"
+            android:fontFamily="@font/alexandriamedium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <!-- Create Post Button -->
+        <Button
+            android:id="@+id/createFirstPostBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start posting..."
+            android:backgroundTint="#1BBCB6"
+            android:textColor="#D16B78"
+            android:textSize="22dp"
+            android:fontFamily="@font/alexandriamedium"
+            android:layout_weight="1"
+            android:layout_below="@id/emptyStateText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
