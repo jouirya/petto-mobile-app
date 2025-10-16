@@ -41,3 +41,4 @@
 ## 🐕 About Petto
 Petto is designed to make pet care simpler and more organized.  
 From health tracking to reminders, everything is in one app built with love for pets ❤️
+##This project is part of our graduation project
